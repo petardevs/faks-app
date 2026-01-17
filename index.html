@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="sr">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>FON ispiti</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/FON-Logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+   <div class="tabs">
+      <div class="tab active tab-kalendar" data-tab="kalendar">📅 Календар</div>
+      <a href="https://oas.fon.bg.ac.rs/raspored-ispita/" class="tab tab-ispitni" target="_blank">Ispitni rokovi</a>
+     
+   </div>
+   <div class="container">
+      <div id="kalendar" class="tabcontent calendar-section active">
+         <div class="header">
+            <div class="legend">
+               <div class="item"><span class="badge red"></span>Нерадни дан</div>
+               <div class="item"><span class="badge green"></span>Наставни дан</div>
+               <div class="item"><span class="badge blue"></span>Колоквијумска недеља</div>
+               <div class="item"><span class="badge yellow"></span>Испитни рок</div>
+               <div class="item"><span class="badge border"></span>Данашњи дан</div>
+            </div>
+            <div class="month-nav">
+               <button id="prevMonth" class="month-btn" type="button" aria-label="Prethodni mesec">
+                  <i class='fas fa-chevron-left'></i>
+               </button>
+               <button id="nextMonth" class="month-btn" type="button" aria-label="Sledeci mesec">
+                  <i class='fas fa-chevron-right'></i>
+               </button>
+            </div>
+         </div>
+         <div class="calendar-grid" id="calendarGrid"></div>
+
+         <h3 style="margin-top:20px;">📋 Листа испита</h3>
+         <table id="eventsTable" class="events-table">
+            <thead>
+               <tr>
+                  <th>Назив</th>
+                  <th>Датум</th>
+                  <th>Напомена</th>
+                  <th>Остало времена</th>
+               </tr>
+            </thead>
+            <tbody></tbody>
+         </table>
+
+      </div>
+
+      <div class="events-section" id="predmetiSection">
+         <h3 style="margin-top:20px;">📚 Листа предмета</h3>
+         <table id="predmetiTable" class="predmetiTable"  cellspacing="0" cellpadding="6" >
+             <thead>
+                 <tr>
+                     <th>Назив</th>
+                     <th>ЕСПБ</th>
+                     <th>Оцена</th>
+                 </tr>
+             </thead>
+             <tbody></tbody>
+             <tfoot>
+                 <tr>
+                     <td><strong>Укупно</strong></td>
+                     <td id="totalEspb"></td>
+                     <td id="avgOcena"></td>
+                 </tr>
+             </tfoot>
+         </table>
+     </div>
+     
+
+      <div id="drugi" class="tabcontent">
+         <iframe src="pdf/februar.pdf" frameborder="0"></iframe>
+      </div>
+
+      <div id="treci" class="tabcontent">
+         <iframe src="pdf/jun.pdf" frameborder="0"></iframe>
+      </div>
+
+      <div id="cetvrti" class="tabcontent">
+         <iframe src="pdf/jul.pdf" frameborder="0"></iframe>
+      </div>
+
+      <div id="peti" class="tabcontent">
+         <iframe src="pdf/september.pdf" frameborder="0"></iframe>
+      </div>
+
+      <div id="sesti" class="tabcontent">
+         <iframe src="pdf/oktobar.pdf" frameborder="0"></iframe>
+      </div>
+
+   </div>
+
+
+   <script src="js/events.js"></script>
+   <script src="js/predmeti.js"></script>
+   <script src="js/prva.js"></script>
+   <script src="js/script.js"></script>
+
+   
+
+</body>
+
+</html>
