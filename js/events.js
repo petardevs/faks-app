@@ -5,8 +5,8 @@ const events = [
       napomena: "Колоквијум - задаци"
    },
    {
-      naziv: "Математика 2",
-      datum: "19.2",
-      napomena: "Цео усмени"
+      naziv: "Јануарски рок",
+      datum: "18.2",
+      napomena: "Испити"
    },
 ];

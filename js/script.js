@@ -252,10 +252,10 @@ if (prevBtn && nextBtn) {
     })();
 
     tr.innerHTML = `
-      <td style="border-bottom:1px solid var(--border); padding:6px;">${ev.naziv}</td>
-      <td style="border-bottom:1px solid var(--border); padding:6px;">${ev.datum}</td>
-      <td style="border-bottom:1px solid var(--border); padding:6px;">${ev.napomena || ''}</td>
-      <td style="border-bottom:1px solid var(--border); padding:6px;">${daysLeft === "-" ? "-" : daysLeft + " дана"}</td>
+      <td padding:6px;">${ev.naziv}</td>
+      <td padding:6px;">${ev.datum}</td>
+      <td padding:6px;">${ev.napomena || ''}</td>
+      <td padding:6px;">${daysLeft === "-" ? "-" : daysLeft + " дана"}</td>
     `;
     tbody.appendChild(tr);
   });
